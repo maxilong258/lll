@@ -50,3 +50,10 @@ function eatenApples(apples: number[], days: number[]): number {
 
   return ans;
 }
+
+/**
+ * 堆：存「过期日期」，最小堆找最早过期
+ * Map：存「每个过期日还剩几个苹果」
+ * 过期判断：今天 i >= rotDay 就不能吃了；堆顶无效就 pop，直到堆顶有效再吃
+ * 这是典型的 贪心 + 最小堆：优先处理 deadline 最早的任务，和「任务调度」里按截止时间排序是同一思路。
+ */
