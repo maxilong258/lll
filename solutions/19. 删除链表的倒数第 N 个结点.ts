@@ -1,3 +1,5 @@
+import { ListNode } from "./ListNode";
+
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
   if (head === null) return null;
   let dummy = new ListNode(0, head);

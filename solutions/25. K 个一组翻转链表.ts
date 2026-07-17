@@ -1,13 +1,4 @@
-
-class ListNode {
-  val: number
-  next: ListNode | null
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-}
-
+import { ListNode } from "./ListNode";
 
 function reverseKGroup(head: ListNode | null, k: number): ListNode | null {
   let prev: ListNode | null = null

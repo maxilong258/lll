@@ -1,3 +1,5 @@
+import { ListNode } from "./ListNode";
+
 // function swapPairs(head: ListNode | null): ListNode | null {
 //   let first = head;
 //   let second = head?.next;

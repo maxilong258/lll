@@ -1,3 +1,5 @@
+import { ListNode } from "./ListNode";
+
 function sortList(head: ListNode | null): ListNode | null {
   if (head === null || head.next === null) return head;
   let runner = head.next;
